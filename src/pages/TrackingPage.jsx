@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-import productImage from "../assets/IMG_4775.png";
+import productImage from "../assets/img_4775.png";
 
 const trackingData = {
   "15b6fc6f-327a-4ec4-896f-486349e85a5d": {
