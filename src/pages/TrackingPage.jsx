@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import productImage from "../assets/img_4775.png";
-
+import { Link } from "react-router-dom"; // make sure this is at the top of your file
 const trackingData = {
   "15b6fc6f-327a-4ec4-896f-486349e85a5d": {
     status: "Shipped",
@@ -123,16 +123,16 @@ const TrackingPage = () => {
               </span>
             )}
             {data.status === "On Hold" && (
-              <span className="text-yellow-700">
-                ⚠️ Your order is on hold.{" "}
-                <a
-                  href="/contact"
-                  className="underline text-blue-700 hover:text-blue-900"
-                >
-                  Contact support
-                </a>{" "}
-                for assistance.
-              </span>
+           <span className="text-yellow-700">
+  ⚠️ Your order is on hold.{" "}
+  <Link
+    to="/contact"
+    className="underline text-blue-700 hover:text-blue-900"
+  >
+    Contact support
+  </Link>{" "}
+  for assistance.
+</span>
             )}
           </div>
         </div>
